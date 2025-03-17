@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius Examples</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .shape {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            border: 2px solid white;
+        }
+
+        .square {
+            border-radius: 0;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .rounded {
+            border-radius: 1rem;
+        }
+
+        .asymmetrical {
+            border-radius: 50% 10% 50% 10%;
+        }
+
+        .complex {
+            border-radius: 30% 70% / 50% 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="shape square"></div>
+    <div class="shape circle"></div>
+    <div class="shape rounded"></div>
+    <div class="shape asymmetrical"></div>
+    <div class="shape complex"></div>
+</div>
+
+</body>
+</html>
